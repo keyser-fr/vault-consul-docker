@@ -1,5 +1,14 @@
 # Managing Secrets with Vault and Consul
 
+## Main dependencies
+
+* Docker v19.03.8
+* Docker-Compose v1.25.4
+* Vault v1.4.1
+* Consul v1.7.3
+
+> **_NOTE:_**  Image based on alpine v3.11.6
+
 ## Want to learn how to build this?
 
 Check out the [post](https://testdriven.io/managing-secrets-with-vault-and-consul).
