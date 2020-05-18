@@ -49,7 +49,7 @@ docker-compose exec consul bash
 
 #### Via UI
 
-See [here](http://localhost:8500/ui/consul)
+See [http://localhost:8500/ui](http://localhost:8500/ui)
 
 ### To enter vault container
 
@@ -136,4 +136,4 @@ $ curl \
 
 #### Via UI
 
-See [here](http://localhost:8200/ui/vault)
+See [http://localhost:8200/ui](http://localhost:8200/ui)
