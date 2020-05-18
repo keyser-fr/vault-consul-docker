@@ -37,6 +37,9 @@ docker-compose up -d --build
 
 ```bash
 docker-compose down
+
+# If we want restart from scratch
+# sudo rm -rf consul/data/*
 ```
 
 ### To enter consul container
