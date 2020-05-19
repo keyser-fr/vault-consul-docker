@@ -1,15 +1,16 @@
-ui = true
-
-listener "tcp" {
-  address     = "vault:8200"
-  tls_disable = true
-}
-
 storage "consul" {
   address = "consul-server-bootstrap:8500"
-  path    = "vault"
+  path    = "vault/"
 }
 
 service_registration "consul" {
   address = "consul-server-bootstrap:8500"
 }
+
+listener "tcp" {
+  address     = "0.0.0.0:8200"
+  tls_disable = true
+}
+
+ui = true
+api_addr = "http://127.0.0.1:8200"
