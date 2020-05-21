@@ -1,7 +1,13 @@
 version: '3.8'
 
+# Networks configuration
 # docker network create vault-consul-docker
+networks:
+  vault-consul-docker:
+    driver: bridge
+    external: true
 
+# Services configuration
 services:
 
   vault:
@@ -59,7 +65,3 @@ services:
       - "./consul/data:/consul/data"
     networks:
       - vault-consul-docker
-
-networks:
-  vault-consul-docker:
-    external: true
